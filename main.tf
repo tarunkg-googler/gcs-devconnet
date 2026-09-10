@@ -18,3 +18,10 @@ module "gcs_bucket" {
   force_destroy               = true
   uniform_bucket_level_access = true
 }
+
+module "public_service" {
+  source  = "terraform-google-modules/cloud-storage/google"
+  version = "~> 6.0"
+  names   = [var.public_bucket_name]
+  project_id = var.project_id
+}
