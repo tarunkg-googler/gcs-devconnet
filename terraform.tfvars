@@ -1,0 +1,5 @@
+project_id    = "sbd-reliability-2"
+region        = "us-central1"
+location      = "US"
+sa_prefix     = "sa-app"
+bucket_prefix = "simple-bucket"
