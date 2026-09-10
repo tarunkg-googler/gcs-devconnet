@@ -17,3 +17,8 @@ output "bucket_url" {
   description = "The URI of the created Cloud Storage bucket."
   value       = module.gcs_bucket.bucket_url
 }
+
+output "public_bucket_name" {
+  value       = module.public_service.name
+  description = "Bucket name created by public module"
+}
