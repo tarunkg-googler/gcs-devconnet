@@ -26,3 +26,9 @@ variable "bucket_prefix" {
   type        = string
   default     = "simple-bucket"
 }
+
+# New variables needed for the public module
+variable "public_bucket_name" {
+  type        = string
+  description = "Name for the public module's bucket"
+}
